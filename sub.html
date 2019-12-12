@@ -6,6 +6,83 @@
 <title>   </title>
 </head>
 <body>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+    <tr>
+      <td>Echo</td>
+      <td>Echo the STRING(s) to standard output.</td>
+      <td>Hello world</td>
+    </tr>
+     <tr>
+      <td>date</td>
+      <td>Display the current time in the given FORMAT, or set the system date.</td>
+      <td>Tue 03 Dec 2019 12:30:01 PM PST</td>
+    </tr>
+     <tr>
+      <td>Hostname</td>
+      <td> Hostname  is used to display the system's DNS name, and to dis‐
+       play or set its hostname or NIS domain name.
+</td>
+      <td>rpi08</td>
+    </tr>
+     <tr>
+      <td>arch</td>
+      <td> Print machine architecture.</td>
+      <td>armv7l</td>
+    </tr>
+     <tr>
+      <td>Uname -a</td>
+      <td> print  all system  information,  in the following order, except
+              omit -p and -i
+</td>
+      <td>Linux rpi08 4.19.75-v7+ #1270 SMP Tue Sep 24 18:45:11 BST 2019 armv7l GNU/Linux</td>
+    </tr>
+     <tr>
+      <td>uptime</td>
+      <td>uptime  gives  a one line display of the following information.</td>
+      <td>12:34:15 up 1 day,  5:14,  3 users,  load average: 0.00, 0.00, 0.00</td>
+    </tr>
+     <tr>
+      <td>who</td>
+      <td>Print information about users who are currently logged in.</td>
+      <td>sp1b     pts/0        2019-12-03 11:51 (172.19.32.54)
+sp1a     pts/1        2019-12-03 11:53 (172.19.32.27)
+sp1b     pts/2        2019-12-03 11:53 (172.19.32.54)
+</td>
+    </tr>
+     <tr>
+      <td>id</td>
+      <td> Print  user  and  group  information for the specified USER</td>
+      <td>uid=1002(sp1b) gid=1002(sp1b) groups=1002(sp1b),997(gpio)
+</td>
+    </tr>
+     <tr>
+      <td>last</td>
+      <td>  last  searches back through the /var/log/wtmp file (or the file
+       designated by the -f option) and displays a list of  all  users
+       logged  in  (and out) since that file was created
+</td>
+      <td>sp1b     pts/2        172.19.32.54     Tue Dec  3 11:53   still logged in
+sp1a     pts/1        172.19.32.27     Tue Dec  3 11:53   still logged in
+sp1b     pts/0        172.19.32.54     Tue Dec  3 11:51   still logged in
+</td>
+    </tr>
+     <tr>
+      <td>w</td>
+      <td> w  displays  information  about  the users currently on the ma‐
+       chine, and their processes. 
+</td>
+      <td>12:39:11 up 1 day,  5:19,  3 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+sp1b     pts/0    172.19.32.54     11:51   47:52   0.25s  0.25s -bash
+sp1a     pts/1    172.19.32.27     11:53    3:11   0.43s  0.00s pager
+sp1b     pts/2    172.19.32.54     11:53    0.00s  0.40s  0.03s w
+</td>
+    </tr>
 
 
 <a href="">homepage</>
