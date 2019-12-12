@@ -1,0 +1,9 @@
+body {background-color: red;}
+h1 { color: black}
+
+p { color: black}
+li {color: black}
+
+table, th, td {
+	border: 3px solid black;
+}
